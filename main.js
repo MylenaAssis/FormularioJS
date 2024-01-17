@@ -23,6 +23,10 @@ form.addEventListener('submit', function(e) {
     formEValido = ValidaNome(nomeBeneficiario.value);
     if (formEValido) {
         alert(mensagemSucesso)
+        nomeBeneficiario.value = '';
+        numeroConta.value = '';
+        valorDeposito.value = '';
+        
     } else {
         alert("Digite o nome completo.")
     }
